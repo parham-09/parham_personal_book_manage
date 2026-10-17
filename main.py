@@ -1,24 +1,18 @@
+from books import display_books
+
 def main():
 
     name = input("enter your name:")
-    print(f"welcome", {name})
+    print("welcome", {name})
     
-
-    print("Welcome to Book Manager")
-    
-
-    count = int(input("how many enter book:"))
-    
+    count = int(input("How many books do you want to enter? "))
     books = []
     
-
     for i in range(count):
-        book_name = input(f"enter book 1{i + 1}: ")
+        book_name = input(f"Enter book {i + 1} name: ")
         books.append(book_name)
     
-    print("\nلیست کتاب‌های ثبت شده:")
-    for i, book in enumerate(books, 1):
-        print(f"{i}. {book}")
+    display_books(books)
 
 if __name__ == "__main__":
     main()
