@@ -23,20 +23,20 @@ def main():
     print("welcome", {name})
     print("Welcome to Book Manager")
 
-    books = load_books()
-    if books:
-        print("\nPreviously registered books:")
-        display_books(books)
-    
-    count = int(input("\nHow many new books do you want to enter? "))
+    tasks = load_books()
+    if tasks:
+        print("Previously registered books:")
+        display_books(tasks)
+    count = int(input("How many new books do you want to enter? "))
     
     for i in range(count):
-        book_name = input(f"Enter book {i + 1} name: ")
-        books.append(book_name)
-    
-    save_books(books)
-    
-    display_books(books)
+        task_name = input("enter a task: ")
+        priority = input("enter priority(low/medium/high): ").lower()
+        
+        task = {
+            "name": task_name,
+            "priority": priority
+        }
+        tasks.append(task)
 
-if __name__ == "__main__":
-    main()
+save_books(tasks=save_books)

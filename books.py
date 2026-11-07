@@ -7,9 +7,9 @@ def load_books():
     except FileNotFoundError:
         return []
 
-def save_books(books):
+def save_books(tasks):
     with open("books.json", "w") as file:
-        json.dump(books, file, indent=4)
+        json.dump(tasks, file, indent=4)
 
 def display_books(books):
     print("\nRegistered books list:")

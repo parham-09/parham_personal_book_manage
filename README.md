@@ -72,4 +72,8 @@ pip install -r requirements.txt
 ### 4. Password Not Read from .env
 - **What is it?** The program can't read your password.
 - **Why it happens?** The `.env` file is missing or the name is wrong.
+<<<<<<< HEAD
 - **What to check first?** Make sure the `.env` file exists.
+=======
+- **What to check first?** Make sure the `.env` file exists.
+>>>>>>> fb3cd6cc372a5fe26853c955f76b04b0c985b116
