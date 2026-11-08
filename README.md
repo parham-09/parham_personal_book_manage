@@ -12,6 +12,13 @@ A Python-based application to manage and organize your personal book collection 
 - Save books
 - Read saved books
 - Admin Mode
+- Set task priority
+
+## Task priority
+each task can have one of these priority levels:
+- low
+- medium
+- high
 
 ## Requirements
 - Python
@@ -29,7 +36,7 @@ pip install -r requirements.txt
 
 # Screenshot
 
-## demo
+## Demo
 ![image](images/image.png)
 
 ## Project Structure
@@ -72,8 +79,4 @@ pip install -r requirements.txt
 ### 4. Password Not Read from .env
 - **What is it?** The program can't read your password.
 - **Why it happens?** The `.env` file is missing or the name is wrong.
-<<<<<<< HEAD
 - **What to check first?** Make sure the `.env` file exists.
-=======
-- **What to check first?** Make sure the `.env` file exists.
->>>>>>> fb3cd6cc372a5fe26853c955f76b04b0c985b116
